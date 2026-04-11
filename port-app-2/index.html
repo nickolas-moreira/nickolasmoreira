@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nickolas Moreira | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Style Links -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Link to google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wdth,wght@91.1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <!-- NAV -->
+    <nav class="navbar roboto-font">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/NM-logo-website.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="hamburger" id="hamburger">☰</div>
+
+      <ul class="nav-links">
+        <li><a href="#intro">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- INTRO -->
+    <section id="intro">
+      <div class="roboto-font">
+        <div class="container">
+
+          <div class="intro-text">
+            <header>
+              <h1 class="text-highlight">Hello, world!</h1>
+            </header>
+
+            <p>
+              I’m Nickolas Moreira, a self-taught full-stack developer who enjoys building clean, responsive web
+              applications and solid backend systems.
+            </p>
+
+            <p>
+              I’m focused on improving every day through projects, problem-solving, and modern development tools.
+            </p>
+          </div>
+
+          <div class="intro-photo">
+            <img src="images/Nick_Moreira_photo.jpg" alt="Portrait of Nickolas Moreira">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section roboto-font reveal">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">APIs</div>
+        <div class="skill-card">VS Code</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="portfolio" class="projects-section roboto-font reveal">
+      <header>
+        <h2>Portfolio</h2>
+      </header>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="images/credit-game-ui-sc-2 copy.jpg" alt="Credit Game App Screenshot">
+          <h3>Credit Game App</h3>
+          <p>Built a full-stack game using HTML, CSS, and JavaScript.</p>
+
+          <div class="project-links">
+            <a href="https://creditgame.netlify.app/">Live Demo</a>
+            <a href="https://github.com/nickolas-moreira/CreditGame">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/portSC.jpg" alt="Portfolio Website Screenshot">
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed a responsive personal portfolio.</p>
+
+          <div class="project-links">
+            <a href="https://nicksdevport.netlify.app/">Live Demo</a>
+            <a href="https://github.com/nickolas-moreira/Nick-s-portfolio">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact form. -->
+    <section id="contact" class="contact-section roboto-font reveal">
+      <h2>Contact Me</h2>
+
+      <form name="contact" method="POST" data-netlify="true" action="/success.html" class="contact-form">
+
+        <input type="hidden" name="form-name" value="contact" />
+
+        <input type="text" name="name" placeholder="Your Name" required />
+
+        <input type="email" name="email" placeholder="Your Email" required />
+
+        <input type="tel" name="phone" placeholder="Your Phone (optional)" />
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <div data-netlify-recaptcha="true"></div>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
